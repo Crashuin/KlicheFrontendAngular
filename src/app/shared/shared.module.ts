@@ -9,7 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProductModule } from '../product/product.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { ProductModule } from '../product/product.module';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    ProductModule
+
   ],
   exports: [
     SidenavComponent,
