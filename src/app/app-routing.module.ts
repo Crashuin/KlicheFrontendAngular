@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-content/pages/main-page/main-page.component';
 import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './auth/pages/register-page/register-page.component';
-
+import { AcercadeComponent } from './main-content/components/acercade/acercade.component';
 const routes: Routes = [
   {
     path: '',
@@ -20,7 +20,12 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterPageComponent
+  },
+  {
+    path: 'acercade',
+    component: AcercadeComponent
   }
+
 ];
 
 @NgModule({
