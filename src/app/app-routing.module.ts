@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-content/pages/main-page/main-page.component';
 import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './auth/pages/register-page/register-page.component';
-import { ProductPageComponent } from './product/pages/product-page/product-page.component';
-
+import { AcercadeComponent } from './main-content/components/acercade/acercade.component';
 const routes: Routes = [
   {
     path: '',
@@ -23,9 +22,10 @@ const routes: Routes = [
     component: RegisterPageComponent
   },
   {
-    path: 'product',
-    component: ProductPageComponent
+    path: 'acercade',
+    component: AcercadeComponent
   }
+
 ];
 
 @NgModule({

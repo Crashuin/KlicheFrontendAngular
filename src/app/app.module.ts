@@ -11,8 +11,6 @@ import { SharedModule } from './shared/shared.module';
 import { ProductModule } from './product/product.module';
 import { MainContentModule } from './main-content/main-content.module';
 import { AuthModule } from './auth/auth.module';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +22,8 @@ import { AuthModule } from './auth/auth.module';
     SharedModule,
     ProductModule,
     MainContentModule,
-    AuthModule
+    AuthModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
