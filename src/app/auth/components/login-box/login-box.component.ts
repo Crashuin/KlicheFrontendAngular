@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'auth-login-box',
@@ -12,10 +12,16 @@ export class LoginBoxComponent implements OnInit {
   public login: FormGroup|any;
 
   constructor(
-    private _fb: FormBuilder
+    private _fb: FormBuilder,
+    private router: Router
   ){
 
   }
+
+  navegarRegister(){
+    this.router.navigate(['/register']);
+  }
+
 
   ngOnInit(): void {
     this.login = this._fb.group({
@@ -33,3 +39,4 @@ export class LoginBoxComponent implements OnInit {
   }
 
 }
+

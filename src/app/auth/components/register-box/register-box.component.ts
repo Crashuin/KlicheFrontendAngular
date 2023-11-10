@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'auth-register-box',
@@ -13,9 +14,14 @@ export class RegisterBoxComponent {
 
   constructor(
     private _fb: FormBuilder,
+    private router: Router
   ){
 
 
+  }
+
+  navegarRegister(){
+    this.router.navigate(['/login']);
   }
 
   ngOnInit(): void {

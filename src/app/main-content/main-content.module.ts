@@ -20,7 +20,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     NavbarComponent,
     FooterBarComponent,
     WelcomeComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    
   ],
   imports: [
     CommonModule,

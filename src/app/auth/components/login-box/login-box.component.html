@@ -1,55 +1,45 @@
 <div class="d-flex justify-content-center align-items-center vh-100">
 
-  <mat-card class="col-3" >
+    <mat-card-content>
+        <div class="form-container" style="text-align: center;">
+            
+            <a href="#"><img class="img-fluid mx-auto d-block m-5" width="300px" height="220px" src=".\assets\images\logo2.png"></a>  
+            <p class="title">Inicio de sesión</p>
+            <form [formGroup]="login" class="mb-2">
+                <div class="row my-2">
+                    <mat-form-field appearance="outline" class="mat-form-field-required mt-2">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="Ingrese su email" formControlName="email">
+                        <mat-error *ngIf="email.errors?.['required']">
+                            El email es requerido
+                        </mat-error>
+                        <mat-error *ngIf="email.errors?.['email']">
+                            Ingrese un email valido
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+      
+                <div class="row my-2" >
+                    <mat-form-field appearance="outline" class="mat-form-field-required">
+                        <mat-label>Contraseña</mat-label>
+                        <input type="password" matInput placeholder="Ingrese su contraseña" formControlName="password">
+                        <mat-error *ngIf="password.invalid || password.pristine">
+                            Ingrese la contraseña
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row text-center text-white my-2 mt-3">
+                    <span>¿No tienes cuenta? <a class="text-white" routerLink="signup" (click)="navegarRegister()"> Registrarse</a> </span>
+                </div>
 
-      <!-- <img class="img-fluid mx-auto d-block mt-4" width="220px" height="220px" src=".\assets\images\login.png"> -->
+                <div class="mt-5">
+                    <button class="button" type="submit" [disabled]="login.invalid">Iniciar sesión</button>
+                </div>
+            </form>
 
-      <mat-card-title class="text-center my-4 fs-1">Inicio de sesión</mat-card-title>
+        </div>
 
-      <mat-card-content>
-
-
-
-      <form [formGroup]="login">
-
-          <div class="row my-2">
-              <mat-form-field appearance="outline" >
-                  <mat-label>Email</mat-label>
-                  <input type="text" matInput placeholder="Ingrese su nombre de usuario" formControlName="email">
-                  <mat-icon style="color: white;" matSuffix>email</mat-icon>
-                  <mat-error *ngIf="email.errors?.['required']">
-                      El email es requerido
-                  </mat-error>
-                  <mat-error *ngIf="email.errors?.['email']">
-                      Ingrese un email valido
-                  </mat-error>
-              </mat-form-field>
-          </div>
-
-          <div class="row my-2" >
-              <mat-form-field appearance="outline" class="mat-form-field-required">
-                  <mat-label>Contraseña</mat-label>
-                  <input type="password" matInput placeholder="Ingrese su contraseña" formControlName="password">
-                  <mat-icon style="color: white;" matSuffix>lock</mat-icon>
-                  <mat-error *ngIf="password.invalid || password.pristine">
-                      Ingrese la contraseña
-                  </mat-error>
-              </mat-form-field>
-          </div>
-
-          <div class="row text-center text-white my-2">
-              <span>¿No tienes cuenta? <a class="text-white" routerLink="signup" > Registrarse</a> </span>
-          </div>
-
-          <div class="text-center mt-4">
-              <button class="p-3" type="submit" color="primary" mat-raised-button [disabled]="login.invalid">Iniciar sesión</button>
-          </div>
-
-      </form>
-
-      </mat-card-content>
-
-  </mat-card>
+    </mat-card-content>
 
 </div>
 

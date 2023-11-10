@@ -1,6 +1,6 @@
 <mat-toolbar style="background: rgba(0,30,50,1);">
-  <button mat-button><mat-icon>home</mat-icon>Inicio</button>
+  <button mat-button (click)="navegarHome()"><mat-icon>home</mat-icon>Inicio</button>
   <span class="spacer"></span>
-  <button mat-button> <mat-icon>person</mat-icon> Iniciar Sesión</button>
-  <button mat-button> <mat-icon>person_add</mat-icon> Registrarse</button>
+  <button mat-button (click)="navegarLogin()">  <mat-icon>person</mat-icon> Iniciar Sesión</button>
+  <button mat-button (click)="navegarRegister()"><mat-icon>person_add</mat-icon> Registrarse</button>
 </mat-toolbar>
