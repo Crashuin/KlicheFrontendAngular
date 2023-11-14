@@ -4,6 +4,7 @@ import { MainPageComponent } from './main-content/pages/main-page/main-page.comp
 import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './auth/pages/register-page/register-page.component';
 import { AcercadeComponent } from './main-content/components/acercade/acercade.component';
+import { ProductPageComponent } from './product/pages/product-page/product-page.component';
 const routes: Routes = [
   {
     path: '',
@@ -24,6 +25,9 @@ const routes: Routes = [
   {
     path: 'acercade',
     component: AcercadeComponent
+  },{
+    path: 'store',
+    component: ProductPageComponent
   }
 
 ];

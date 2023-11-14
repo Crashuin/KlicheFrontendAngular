@@ -22,6 +22,9 @@ export class LoginBoxComponent implements OnInit {
     this.router.navigate(['/register']);
   }
 
+  iniciarSesion(){
+    this.router.navigate(['/store']);
+  }
 
   ngOnInit(): void {
     this.login = this._fb.group({

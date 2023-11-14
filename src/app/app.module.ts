@@ -23,7 +23,7 @@ import { AuthModule } from './auth/auth.module';
     ProductModule,
     MainContentModule,
     AuthModule,
-
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
