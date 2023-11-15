@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterBoxComponent } from './components/register-box/register-box.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule
   ],

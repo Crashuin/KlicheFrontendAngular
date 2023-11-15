@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-footer-bar',
+  selector: 'main-content-footer-bar',
   templateUrl: './footer-bar.component.html',
   styleUrls: ['./footer-bar.component.css']
 })

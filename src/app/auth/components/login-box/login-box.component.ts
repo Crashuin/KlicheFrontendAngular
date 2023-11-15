@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'auth-login-box',
   templateUrl: './login-box.component.html',
-  styleUrls: ['./login-box.component.css']
+  styleUrls: ['./login-box.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LoginBoxComponent implements OnInit {
 

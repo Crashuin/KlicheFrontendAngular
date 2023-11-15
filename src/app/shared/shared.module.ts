@@ -10,13 +10,16 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { Error404PageComponent } from './pages/error404-page/error404-page.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     SidenavComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    Error404PageComponent
   ],
   imports: [
     CommonModule,
@@ -25,12 +28,13 @@ import { FooterComponent } from './components/footer/footer.component';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-
+    RouterModule
   ],
   exports: [
     SidenavComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    Error404PageComponent
   ]
 })
 export class SharedModule { }

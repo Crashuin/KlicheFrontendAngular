@@ -22,7 +22,7 @@
 .card img{
     width: 400px; height: 420px;
     border-radius: 2%;
-    box-shadow: 6px 6px 8px rgba(0, 247, 255, 0.2); 
+    box-shadow: 6px 6px 8px rgba(0, 247, 255, 0.2);
 
 }
 
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between; /* Espacio igual entre elementos */
   }
-  
+
   .horizontal-list li {
     border: 1px solid #ccc;
     padding: 10px;
@@ -46,7 +46,7 @@
   #features{
     color: rgb(197, 179, 179);
   }
-  
+
 /*!
 * Start Bootstrap - Modern Business v5.0.7 (https://startbootstrap.com/template-overviews/modern-business)
 * Copyright 2013-2023 Start Bootstrap
